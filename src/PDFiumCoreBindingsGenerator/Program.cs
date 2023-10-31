@@ -61,7 +61,7 @@ namespace PDFiumCoreBindingsGenerator
             var destinationCsPath = Path.GetFullPath(Path.Combine(pdfiumProjectDir, "PDFiumCore.cs"));
             var destinationLibraryPath = Path.GetFullPath(Path.Combine(rootDir, "artifacts/libraries"));
 
-            var win64Info = new LibInfo("pdfium-win-x64", "bin/pdfium.dll", "win-x64/native/");
+            var win64Info = new LibInfo("pdfium-v8-win-x64", "bin/pdfium.dll", "win-x64/native/");
 
 
             Console.WriteLine("Downloading PDFium release info...");

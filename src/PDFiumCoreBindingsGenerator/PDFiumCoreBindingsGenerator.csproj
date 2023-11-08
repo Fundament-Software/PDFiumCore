@@ -9,12 +9,6 @@
     <PackageReference Include="SharpZipLib" Version="1.4.2" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="CLI.Gen">
-      <HintPath>..\CppSharp\bin\Release_x64\CLI.Gen.dll</HintPath>
-    </Reference>
-    <Reference Include="Common.Gen">
-      <HintPath>..\CppSharp\bin\Release_x64\Common.Gen.dll</HintPath>
-    </Reference>
     <Reference Include="CppSharp">
       <HintPath>..\CppSharp\bin\Release_x64\CppSharp.dll</HintPath>
     </Reference>
@@ -26,9 +20,6 @@
     </Reference>
     <Reference Include="CppSharp.Generator">
       <HintPath>..\CppSharp\bin\Release_x64\CppSharp.Generator.dll</HintPath>
-    </Reference>
-    <Reference Include="CppSharp.Generator.Tests">
-      <HintPath>..\CppSharp\bin\Release_x64\CppSharp.Generator.Tests.dll</HintPath>
     </Reference>
     <Reference Include="CppSharp.Parser">
       <HintPath>..\CppSharp\bin\Release_x64\CppSharp.Parser.dll</HintPath>
@@ -47,21 +38,6 @@
     </Reference>
     <Reference Include="CppSharp.Runtime">
       <HintPath>..\CppSharp\bin\Release_x64\CppSharp.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="CSharp.Gen">
-      <HintPath>..\CppSharp\bin\Release_x64\CSharp.Gen.dll</HintPath>
-    </Reference>
-    <Reference Include="Encodings.Gen">
-      <HintPath>..\CppSharp\bin\Release_x64\Encodings.Gen.dll</HintPath>
-    </Reference>
-    <Reference Include="NamespacesDerived.Gen">
-      <HintPath>..\CppSharp\bin\Release_x64\NamespacesDerived.Gen.dll</HintPath>
-    </Reference>
-    <Reference Include="StandardLib.Gen">
-      <HintPath>..\CppSharp\bin\Release_x64\StandardLib.Gen.dll</HintPath>
-    </Reference>
-    <Reference Include="VTables.Gen">
-      <HintPath>..\CppSharp\bin\Release_x64\VTables.Gen.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>

@@ -11,6 +11,7 @@ namespace PDFiumCoreDemo
         {
             fpdfview.FPDF_InitLibrary();
             RenderPageToImage();
+            fpdfview.FPDF_DestroyLibrary();
         }
 
         static void RenderPageToImage()
@@ -24,6 +25,10 @@ namespace PDFiumCoreDemo
             var document = fpdfview.FPDF_LoadDocument("pdf-sample.pdf", null);
             var page = fpdfview.FPDF_LoadPage(document, 0);
             fpdfview.FPDF_GetPageSizeByIndex(document, 0, ref pageWidth, ref pageHeight);
+
+            FPDF_FORMFILLINFO formInfo = new FPDF_FORMFILLINFO();
+            formInfo.Version = 2;
+            var form = fpdf_formfill.FPDFDOC_InitFormFillEnvironment(document, formInfo);
 
             var viewport = new Rectangle()
             {
@@ -44,6 +49,7 @@ namespace PDFiumCoreDemo
 
             // Leave out if you want to make the background transparent.
             fpdfview.FPDFBitmapFillRect(bitmap, 0, 0, (int)viewport.Width, (int)viewport.Height, color);
+            fpdf_formfill.FPDF_FFLDraw(form, bitmap, page, 0, 0, (int)pageWidth, (int)pageHeight, 0, (int)RenderFlags.RenderAnnotations);
 
             // |          | a b 0 |
             // | matrix = | c d 0 |
@@ -72,6 +78,11 @@ namespace PDFiumCoreDemo
                 (int)pageHeight);
 
             image.ImageData.SaveAsPng("output.png");
+
+            fpdf_formfill.FPDFDOC_ExitFormFillEnvironment(form);
+            fpdfview.FPDFBitmapDestroy(bitmap);
+            fpdfview.FPDF_ClosePage(page);
+            fpdfview.FPDF_CloseDocument(document);
         }
     }
 }

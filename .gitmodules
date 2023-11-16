@@ -1,3 +1,0 @@
-[submodule "src/CppSharp"]
-	path = src/CppSharp
-	url = https://github.com/Fundament-Software/CppSharp.git

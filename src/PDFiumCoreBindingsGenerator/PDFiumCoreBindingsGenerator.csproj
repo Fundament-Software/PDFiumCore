@@ -5,39 +5,8 @@
     <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="CppSharp" Version="1.1.5.3168" />
     <PackageReference Include="Newtonsoft.Json" version="13.0.3" />
     <PackageReference Include="SharpZipLib" Version="1.4.2" />
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="CppSharp">
-      <HintPath>..\CppSharp\bin\Release_x64\CppSharp.dll</HintPath>
-    </Reference>
-    <Reference Include="CppSharp.AST">
-      <HintPath>..\CppSharp\bin\Release_x64\CppSharp.AST.dll</HintPath>
-    </Reference>
-    <Reference Include="CppSharp.CLI">
-      <HintPath>..\CppSharp\bin\Release_x64\CppSharp.CLI.dll</HintPath>
-    </Reference>
-    <Reference Include="CppSharp.Generator">
-      <HintPath>..\CppSharp\bin\Release_x64\CppSharp.Generator.dll</HintPath>
-    </Reference>
-    <Reference Include="CppSharp.Parser">
-      <HintPath>..\CppSharp\bin\Release_x64\CppSharp.Parser.dll</HintPath>
-    </Reference>
-    <Reference Include="CppSharp.Parser.Bootstrap">
-      <HintPath>..\CppSharp\bin\Release_x64\CppSharp.Parser.Bootstrap.dll</HintPath>
-    </Reference>
-    <Reference Include="CppSharp.Parser.CLI">
-      <HintPath>..\CppSharp\bin\Release_x64\CppSharp.Parser.CLI.dll</HintPath>
-    </Reference>
-    <Reference Include="CppSharp.Parser.CSharp">
-      <HintPath>..\CppSharp\bin\Release_x64\CppSharp.Parser.CSharp.dll</HintPath>
-    </Reference>
-    <Reference Include="CppSharp.Parser.Gen">
-      <HintPath>..\CppSharp\bin\Release_x64\CppSharp.Parser.Gen.dll</HintPath>
-    </Reference>
-    <Reference Include="CppSharp.Runtime">
-      <HintPath>..\CppSharp\bin\Release_x64\CppSharp.Runtime.dll</HintPath>
-    </Reference>
   </ItemGroup>
 </Project>

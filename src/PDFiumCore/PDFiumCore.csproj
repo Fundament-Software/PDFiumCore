@@ -32,18 +32,10 @@
     <NoWarn>1701;1702;1591</NoWarn>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="bblanchon.PDFiumV8.Win32" Version="120.0.6097" />
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All" />
+    <PackageReference Include="bblanchon.PDFiumV8.Win32" Version="121.0.6124" />
+    <PackageReference Include="CppSharp.Runtime" Version="1.1.5.3168" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
     <PackageReference Include="NETStandard.Library" Version="2.0.3" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="..\CppSharp\src\Runtime\MarshalUtil.cs" Link="CppSharp\MarshalUtil.cs" />
-    <Compile Include="..\CppSharp\src\Runtime\Pointer.cs" Link="CppSharp\Pointer.cs" />
-    <Compile Include="..\CppSharp\src\Runtime\SafeUnmanagedMemoryHandle.cs" Link="CppSharp\SafeUnmanagedMemoryHandle.cs" />
-    <Compile Include="..\CppSharp\src\Runtime\SymbolResolver.cs" Link="CppSharp\SymbolResolver.cs" />
-    <Compile Include="..\CppSharp\src\Runtime\UTF32Marshaller.cs" Link="CppSharp\UTF32Marshaller.cs" />
-    <Compile Include="..\CppSharp\src\Runtime\UTF8Marshaller.cs" Link="CppSharp\UTF8Marshaller.cs" />
-    <Compile Include="..\CppSharp\src\Runtime\VTables.cs" Link="CppSharp\VTables.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="icon.png" Pack="true" PackagePath="" />
